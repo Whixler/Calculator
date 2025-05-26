@@ -26,8 +26,8 @@ body{
     gap: 5px;
 }
 
-.value, .operator {
-    border: 1px solid white;
+button {
+    border: 1px;
     border-radius: 5px;
     width: 80px;
     background: gray;
