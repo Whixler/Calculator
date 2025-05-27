@@ -21,7 +21,9 @@ function operation(num1, num2, operator) {
 const display = document.getElementById("display");
 let num1 = "";
 let num2 = "";
+let operator = "";
 
+const opbtn = document.querySelectorAll('.opbtn');
 const all_buttons = document.querySelectorAll('.button');
 
 all_buttons.forEach(bt => {
@@ -32,8 +34,17 @@ all_buttons.forEach(bt => {
     })
 });
 
+opbtn.forEach(bt => {
+    bt.addEventListener("click", (e) =>{
+        operator = e.target.innerHTML;
+        console.log(operator);
+        display.textContent = "";
+    })
+});
+
 document.querySelector('#btnAC')?.addEventListener("click", () =>{
     display.textContent = "";
     num1 = "";
     num2 = "";
 });
+
