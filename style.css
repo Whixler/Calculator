@@ -5,7 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 350px;
+    width: 386px;
 }
 
 .title{
@@ -18,26 +18,49 @@ body{
 .display{
     display: flex;
     justify-content: end;
+    background-color: white;
+    color: black;
+    margin: 20px;
+    border: 2px solid white;
+    height: 50px;
+    font-size: 30px;
 }
 
 .container {
     display: flex;
     flex-flow: row wrap;
     gap: 5px;
+    margin: 20px;
 }
 
 button {
     border: 1px;
     border-radius: 5px;
-    width: 80px;
+    width: 81px;
     background-color: gray;
     color: white;
     text-align: center;
     height: 60px;
 }
+#btnEqual{
+    background-color: darkorange;
+}
 
+.opbtn{
+    background-color: darkslategrey;
+}
+.clearbtn{
+    background-color: darkred;
+}
 button:active{
     background-color: darkgray;
+}
+
+.calculator{
+    border: 2px solid black;
+    background: darkgrey;
+    border-radius: 20px;
+    padding-top: 100px;
 }
 
 
